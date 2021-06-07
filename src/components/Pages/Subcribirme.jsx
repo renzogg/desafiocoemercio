@@ -8,7 +8,7 @@ const Subcribirme = ({match}) =>(
     <div className="mt-5">
         <Banner conditionbanner={2}/>
         <Forms precio={match}/>  
-        <FooterSub foot={match.params.id} />
+        <FooterSub match={match} />
     </div>
 )
 

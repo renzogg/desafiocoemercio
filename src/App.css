@@ -42,16 +42,17 @@
   text-align: start;
 }
 .checbienvenido{
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   background-color:white;
   padding: 20px;
-  margin: 0px 120px;
+  margin: 0px auto;
   border-radius: 50%;
   color: brown;
 }
+
 .textOverline{
-  font-size: 1.1rem;
+  font-size: .8rem;
   font-weight: bold;
   text-decoration: underline;
 }

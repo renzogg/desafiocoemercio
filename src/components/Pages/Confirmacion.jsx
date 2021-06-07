@@ -1,7 +1,7 @@
 import React from 'react'
-import CheckImg from '../Atoms/CheckImg'
 import Banner from '../Molecules/Banner'
 import Footer from '../Molecules/Footer'
+import checkimgen from '../../images/check.svg'
 
 const Confirmacion = ({match}) =>(
     
@@ -9,9 +9,9 @@ const Confirmacion = ({match}) =>(
     <Banner/>
     {console.log(match)}
         <div className="mt-5 py-4  vh-100 backgroundFondo ">
-            <div className="mt-4">
+            <div className="mt-2">
                 <div className="d-flex ">
-                   
+                   <img className="checbienvenido" src={checkimgen} alt="check"/>
                 </div>
 
             <div className="d-flex flex-column bd-highligh text-center m-4">

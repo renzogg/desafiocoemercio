@@ -1,5 +1,5 @@
 import React from 'react'
-{/* <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit </li> */}
+
 
 
 const PlansDetails = ({condition}) =>(
