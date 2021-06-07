@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+:root{
+  --colorBanner:#333333;
+  --colorBackground:#EAEAEA
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backgroundBanner{
+  background-color: var(--colorBanner);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.backgroundFondo{
+  background-color: var(--colorBackground);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fontPrice0{
+  font-size: 0.9rem;
 }
-
-.App-link {
-  color: #61dafb;
+.fontPrice1{
+  font-size: 1rem;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fontPrice2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.fontPrice3{
+  font-size: 3rem;
+}
+.fontPrice4{
+  font-size: 4rem;
+}
+.fontlist{
+  font-size:0.9rem;
+  text-align: start;
+}
+.checbienvenido{
+  height: 120px;
+  width: 120px;
+  background-color:white;
+  padding: 20px;
+  margin: 0px 120px;
+  border-radius: 50%;
+  color: brown;
+}
+.textOverline{
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.react-switch {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+.textcolorGray{
+  color: #a5a5a5;
 }
