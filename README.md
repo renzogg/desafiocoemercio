@@ -15,5 +15,21 @@ npm install react-switch
 yarn add react-router-dom
 yarn add prop-types
 
+/**/
 
+App
+    --Content
+            --Banner
+            --Contenido
+                --SwitchPlans
+                    --Switch
+                    --Plans
+                        --PlansPrice
+                        --PlansDetails
+                        --Button
 
+    --Subcribirme
+        --Banner
+        --Forms
+            --Button
+        --FooterSub
