@@ -1,8 +1,10 @@
 import React from 'react'
+import Button from '../Molecules/Button'
+import {Link} from 'react-router-dom'
 
 const Forms = ({precio}) =>(
 
-<form className="mt-5 px-4 py-1 backgroundFondo">
+<form className="mt-5 px-4 py-1 backgroundFondo vh-100">
 <div className="form-group mt-5">
     <label htmlFor="nameapellido" className="fontPrice0b">Nombre y Apellidos</label>
     <input type="text" className="form-control" id="nameapellido" aria-describedby="emailHelp"/>
@@ -18,8 +20,6 @@ const Forms = ({precio}) =>(
 
   </div>
   <div className="form-group">
-
-    
       <label htmlFor="FExpira" className="fontPrice0b">F. Expira</label>
         <input type="password" className="form-control" id="FExpira" placeholder="MM/AA"/>
     
@@ -28,8 +28,13 @@ const Forms = ({precio}) =>(
         <input type="number" className="form-control" id="CVC"/>
       </div>
   </div>
-
-  <button type="submit" className="btn btn-primary w-100 bg-dark">Pagar S/59 </button>
+  
+    {precio.params.id ==="1"?
+   
+        <Button title={`Pagar S/ 59`} confirmacion={1}/>:
+        <Button title={`Pagar S/ 29`} confirmacion={2}/>
+    }
+  
 </form>
 )
 
