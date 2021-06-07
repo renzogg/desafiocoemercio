@@ -1,28 +1,35 @@
 import React from 'react'
 
-const Forms = () =>(
+const Forms = ({precio}) =>(
 
-<form className="mt-5 px-4 py-1">
+<form className="mt-5 px-4 py-1 backgroundFondo">
 <div className="form-group mt-5">
-    <label htmlFor="exampleInputEmail1">Email address</label>
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+    <label htmlFor="nameapellido" className="fontPrice0b">Nombre y Apellidos</label>
+    <input type="text" className="form-control" id="nameapellido" aria-describedby="emailHelp"/>
 
   </div>
   <div className="form-group">
-    <label htmlFor="exampleInputEmail1">Numero de tarjeta</label>
+    <label htmlFor="numerotarjeta" className="fontPrice0b">Número de tarjeta</label>
     <div className="d-flex">
 
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+    <input type="password" className="form-control" id="numerotarjeta" aria-describedby="emailHelp"/>
     <button>card</button>
     </div>
 
   </div>
   <div className="form-group">
-    <label htmlFor="exampleInputPassword1">Password</label>
-    <input type="password" className="form-control" id="exampleInputPassword1"/>
+
+    
+      <label htmlFor="FExpira" className="fontPrice0b">F. Expira</label>
+        <input type="password" className="form-control" id="FExpira" placeholder="MM/AA"/>
+    
+      <div className="form-group">
+        <label htmlFor="CVC" className="fontPrice0b">CVC</label>
+        <input type="number" className="form-control" id="CVC"/>
+      </div>
   </div>
 
-  <button type="submit" className="btn btn-primary w-100 bg-dark">Submit</button>
+  <button type="submit" className="btn btn-primary w-100 bg-dark">Pagar S/59 </button>
 </form>
 )
 

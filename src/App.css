@@ -6,11 +6,22 @@
 .backgroundBanner{
   background-color: var(--colorBanner);
 }
+.backgroundBannerback{
+  background-color: var(--colorBanner);
+  align-items: center;
+    justify-content: start;
+    display: flex;
+   
+}
 .backgroundFondo{
   background-color: var(--colorBackground);
 }
 .fontPrice0{
   font-size: 0.9rem;
+}
+.fontPrice0b{
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 .fontPrice1{
   font-size: 1rem;
@@ -51,3 +62,10 @@
 .textcolorGray{
   color: #a5a5a5;
 }
+a {
+  color: white;
+}
+.backimg{
+  margin: 2px;
+height: 20px;
+width: 20px;}

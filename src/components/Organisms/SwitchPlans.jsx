@@ -17,9 +17,10 @@ class SwitchPlans extends Component {
       return (
           <>
           <div className="d-flex justify-content-around fontPrice1 mt-4">
-                <span>Plan Estándar</span>
+          {this.state.checked ? 
+                <span className="textcolorGray">Plan Estándar</span>:
+                <span >Plan Estándar</span>}
               <div className="custom-control custom-switch text-center mr-4">
-           
                         <Switch
                             onChange={this.handleChange}
                             checked={this.state.checked}
@@ -34,11 +35,12 @@ class SwitchPlans extends Component {
                             activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
                             height={20}
                             width={48}
-                           
                         />
                       </div>
 
-                      <span>Plan Premiun</span>
+                      {this.state.checked ? 
+                <span >Plan Premiun</span>:
+                <span className="textcolorGray">Plan Premiun</span>}
                
                 </div> 
                 <span>

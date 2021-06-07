@@ -1,15 +1,32 @@
 import React from 'react'
 
-const FooterSub = () => (
+const FooterSub = ({math}) => (
 
     <div className="bg-white fixed-bottom">
-        <div className="mx-3 p-2 d-flex justify-content-between">
-            <span>Plan Estándar</span>
-            <span>S/29 al mes</span>
+
+    { math ===1?
+        <div>
+            <div className="mx-3 p-2 d-flex justify-content-between">
+                <span className="fontPrice1">Plan Premiun</span>
+                <span className="fontPrice1">S/59 al mes</span>
+            </div>
+            <span className="d-flex justify-content-center  mb-3">
+                cambiar a Plan Estandar 
+            </span> 
+        </div>:
+        <div>
+            <div className="mx-3 p-2 d-flex justify-content-between">
+                <span className="fontPrice1">Plan Premiun</span>
+                <span className="fontPrice1"> S/59 al mes</span>
+            </div>
+            <span className="d-flex justify-content-center  mb-3">
+                cambiar a Plan Estandar 
+            </span> 
         </div>
-        <span className="d-flex justify-content-center  mb-3">
-            cambiar a Plan Premiun 
-        </span>    
+    
+    
+    }
+     
     </div>
 )
 

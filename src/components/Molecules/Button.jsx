@@ -1,22 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 
-
-const Button = ({title,id}) =>(
-
-    <div className="text-white bg-dark w-100 p-2">
-            {title}
-    </div>
+const Button = ({title,condition}) =>(
+    <Link to={`/Subcribirme/${condition}`}>   
+        <div className="text-white bg-dark w-100 p-2">    
+                    {title}        
+        </div>
+    </Link>
 )
 Button.propTypes =  {
         
     title : PropTypes.string,
-    id : PropTypes.number
+    condition : PropTypes.number
 
 }
 Button.defaultProps ={
     title:"Suscribime",
-    id:1
+    condition:1
 
 }
 export default Button
